@@ -1,17 +1,21 @@
+* {
+    margin: 0;
+}
 .main {
     margin: 40vh 0 0 0;
-    display: grid;
-    grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
-    gap: 5px;
+    white-space: nowrap;
 }
-.convert-button {
-    font-size: 5vh;
+.convert-button, .text-field {
+    resize: none;
+    max-width: 1fr;
+    outline: none;
+    text-align: center;
+    font-size: 2vh;
     border-radius: 10px;
     height: 10vh;
     background-color: slateblue;
     color: white;
     border: 0;
-    /*grid-column: 3 / 4;*/
     transition-duration: 100ms;
     -webkit-transition-duration: 100ms;
 }
@@ -22,13 +26,19 @@
     background-color: white;
     color: black;
 }
-.text-field-1 {
-    outline: 0;
-    border-radius: 10px;
-    background-color: slateblue;
-    border: 0;
-    height: 10vh;
-    color: white;
-    text-align: center;
-    font-size: 5vh;
+#text-field-1 {
+    margin: 0 0 0 20%;
+    width: 20%;
+}
+#text-field-2 {
+    width: 5%;
+}
+.convert-button {
+    width: 10%;
+}
+#text-field-3 {
+    width: 5%;
+}
+#text-field-4 {
+    width: 20%;
 }
