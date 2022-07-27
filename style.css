@@ -1,4 +1,17 @@
 .main {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+.convert-button {
+    font-size: 1vh;
+    border-radius: 10px;
+    height: 10vh;
+    background-color: deepskyblue;
+    border: 0;
+    grid-column: 2 / 3;
+    transition-duration: 250ms;
+    -webkit-transition-duration: 250ms;
+}
+.convert-button:hover {
+    background-color: lightskyblue;
 }
