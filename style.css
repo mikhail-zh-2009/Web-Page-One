@@ -1,17 +1,34 @@
 .main {
+    margin: 40vh 0 0 0;
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+    gap: 5px;
 }
 .convert-button {
-    font-size: 1vh;
+    font-size: 5vh;
     border-radius: 10px;
     height: 10vh;
-    background-color: deepskyblue;
+    background-color: slateblue;
+    color: white;
     border: 0;
-    grid-column: 2 / 3;
-    transition-duration: 250ms;
-    -webkit-transition-duration: 250ms;
+    /*grid-column: 3 / 4;*/
+    transition-duration: 100ms;
+    -webkit-transition-duration: 100ms;
 }
 .convert-button:hover {
-    background-color: lightskyblue;
+    background-color: darkslateblue;
+}
+.convert-button:active {
+    background-color: white;
+    color: black;
+}
+.text-field-1 {
+    outline: 0;
+    border-radius: 10px;
+    background-color: slateblue;
+    border: 0;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    font-size: 5vh;
 }
